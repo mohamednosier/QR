@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text=""
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Scan" />
+    <Button
+        android:height="70dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="التأكد من المنتج "
+        android:id="@+id/confirm_product"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:height="70dp"
+        android:layout_below="@+id/confirm_product"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="تسجيل استخدام المنتج "
+        android:id="@+id/login_product"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/login_product"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="شراء منتج "
+        android:id="@+id/buy_product"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:height="70dp"
+        android:layout_below="@+id/buy_product"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="استشارات زراعية "
+        android:id="@+id/consultant"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/consultant"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:textSize="30dp"
+            android:height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text=""
+            android:id="@+id/loyality_point"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius"/>
+        <Button
+
+            android:textSize="30dp"
+            android:height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="نقاطي"
+            android:id="@+id/loyality"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_radius"/>
+    </RelativeLayout>
+
+</RelativeLayout>

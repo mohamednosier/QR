@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.QRActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center"
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/half_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:text="فحص الكود "
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/farm_back2"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/img_back"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:text="تسجيل المزرعه "
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+<ImageView
+    android:visibility="gone"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/img"
+    android:src="@drawable/logo_malyan"/>
+
+    <Button
+        android:layout_below="@+id/toolbar"
+        android:height="70dp"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="تسجيل شراء منتج "
+        android:id="@+id/confirm_product"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+
+        android:height="70dp"
+        android:layout_below="@+id/confirm_product"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="تسجيل إستخدام منتج "
+        android:id="@+id/login_product"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:visibility="gone"
+        android:height="70dp"
+        android:layout_marginTop="20dp"
+android:layout_below="@+id/login_product"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="محفظتي  "
+        android:id="@+id/my_wallet"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/my_wallet"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=" سجل المزرعه "
+        android:id="@+id/farm_log"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+
+        android:visibility="gone"
+        android:height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/farm_log"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="اصدار رقم مزرعه جديده "
+        android:id="@+id/new_farm"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+
+
+        android:height="70dp"
+        android:layout_below="@+id/new_farm"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="للإستشارات إتصل بنا"
+        android:id="@+id/callus"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:visibility="gone"
+        android:height="70dp"
+        android:layout_below="@+id/consultant"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="جرب "
+        android:id="@+id/testpost"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+android:gravity="center"
+            android:textSize="30dp"
+            android:height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="50"
+            android:id="@+id/loyality_point"
+            android:textColor="#f000"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_radius1"/>
+        <TextView
+
+            android:textSize="40dp"
+android:height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="نقاطي"
+            android:id="@+id/loyality"
+            android:textColor="#f000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:background="#43B649"
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:id="@+id/footer"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/home1"
+            android:layout_marginRight="10dp"
+            android:text="الرئيسيه"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/my_loyality"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text=" نقاطى"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/call"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="اتصل بنا"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#43B649"
+        android:layout_marginTop="50dp"
+
+        android:layout_width="match_parent"
+        android:id="@+id/header"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_marginRight="10dp"
+            android:text="المنتج"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="التاريخ"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/quantity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/quantity1"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="الكميه"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center"
+        android:background="#43B649"
+
+android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:id="@+id/footer"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:id="@+id/home1"
+            android:layout_marginRight="10dp"
+            android:text="الرئيسيه"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/my_loyality"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text=" نقاطى"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/call"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="اتصل بنا"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+       android:layout_marginBottom="50dp"
+        android:background="#fff"
+        android:scrollbars="vertical"
+        tools:context=".Fragment.FirstFragment">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

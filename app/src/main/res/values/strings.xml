@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Farm Advantage</string>
+    <string name="turn_off_flashlight">FlashLight on</string>
+    <string name="turn_on_flashlight">flashLight off</string>
+    <string name="title_activity_main">QR and Barcode Scanner</string>
+    <string name="message">ضع الكود  داخل مستطيل عدسة الكاميرا لمسحها ضوئيًا.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

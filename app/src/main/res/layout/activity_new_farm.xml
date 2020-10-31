@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.TestActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center"
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/half_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:text="اصدار مزرعه جديده  "
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/farm_back2"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/img_back"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:text="تسجيل المزرعه "
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="برجاء فتح ال GPS في موقع المزرعه "
+        android:id="@+id/gps"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:layout_below="@+id/gps"
+        android:visibility="gone"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="برجاء فتح ال GPS من الخريطه  "
+        android:id="@+id/gps1"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:visibility="gone"
+        android:layout_below="@+id/gps1"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="برجاء ادخال رقم المحمول "
+        android:id="@+id/phone"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <EditText
+
+        android:inputType="phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="الرجاء ادخال المساحه  "
+        android:id="@+id/space_number"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <EditText
+        android:inputType="phone"
+        android:layout_below="@+id/space_number"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="ادخال الرقم الخاص بالمزرعه  "
+        android:id="@+id/farm_code_number"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+    <Button
+        android:layout_below="@+id/farm_code_number"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="او فحص الرقم الخاص بالمزرعه "
+        android:id="@+id/farm_code"
+        android:textColor="#43B649"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_radius1"/>
+    <Button
+        android:layout_below="@+id/farm_code"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="التأكيد "
+        android:id="@+id/sure_phone"
+        android:textColor="#43B649"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_radius1"/>
+    <TextView
+        android:layout_below="@+id/sure_phone"
+        android:inputType="phone"
+
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="مرحبا بك في  مليان "
+        android:id="@+id/text1"
+        android:textColor="#43B649"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:id="@+id/text2"
+        android:textColor="#43B649"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textSize="20dp"
+        android:inputType="phone"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text=""
+        android:id="@+id/text3"
+        android:textColor="#43B649"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <fragment
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_below="@+id/text3"
+        tools:context=".MapLocationActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="50"
+            android:id="@+id/loyality_point"
+            android:textColor="#f000"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_radius1"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+            <TextView
+
+                android:textSize="30dp"
+
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="رقم المزرعه"
+                android:id="@+id/loyality"
+                android:textColor="#f000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+
+                android:textSize="30dp"
+
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="الخاص بك"
+                android:id="@+id/loyality1"
+                android:textColor="#f000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

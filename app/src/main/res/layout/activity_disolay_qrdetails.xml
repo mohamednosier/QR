@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.DisolayQRDetailsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center"
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/half_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:text="نتيجه الفحص "
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/farm_back2"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/img_back"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:text="تسجيل المزرعه "
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+android:id="@+id/relative1"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+android:id="@+id/open_malyan"
+            android:textSize="25dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="برجاء فتح تطبيق مليان او التحميل من الرابط "
+
+            android:textColor="#f000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <TextView
+        android:visibility="gone"
+        android:layout_below="@+id/relative1"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="50"
+        android:id="@+id/link"
+        android:textColor="#f000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_radius1"/>
+    <TextView
+
+        android:visibility="gone"
+android:id="@+id/defination"
+        android:textSize="40dp"
+android:layout_below="@+id/link"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="كود تعريفي اصلي :"
+
+        android:textColor="#f000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/comapny_name"
+android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/organization"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/text_radius1"
+            android:gravity="center"
+            android:text="25"
+            android:textColor="#f000"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/defination"
+            android:id="@+id/comapny_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_width="wrap_content"
+
+            android:textSize="25dp"
+
+
+
+            android:text="الشركه المنتجه"
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+        <TextView
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/product_name"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="25"
+            android:id="@+id/product"
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_radius1"
+
+            />
+        <TextView
+           android:layout_below="@+id/organization"
+            android:id="@+id/product_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+
+            android:textSize="25dp"
+
+
+
+            android:text="اسم المنتج"
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/product_description"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+
+
+            android:text="25"
+            android:id="@+id/product_code_description"
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_radius1"/>
+        <TextView
+            android:id="@+id/product_description"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/product"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="25dp"
+
+
+
+            android:text="وصف المنتج "
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/product_url"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="25dp"
+
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="25"
+
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_radius1"
+            android:id="@+id/product_code_url"
+           />
+        <TextView
+            android:id="@+id/product_url"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/product_code_description"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="25dp"
+
+
+
+            android:text="الرابط "
+            android:textColor="#f000"
+
+            android:layout_height="wrap_content"
+            />
+
+
+    <TextView
+        android:id="@+id/internet"
+android:layout_below="@+id/product_code_url"
+        android:textSize="25dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="برجاء فتح الاتصال بشبكه الانترنت للتاكد من المنتج وتحميل نقاط الولاء "
+
+        android:textColor="#f000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:layout_below="@+id/internet"
+        android:height="70dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="تسجيل شراء المنتج "
+        android:id="@+id/back"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"/>
+</RelativeLayout>
+</ScrollView>
